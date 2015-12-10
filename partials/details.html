@@ -1,0 +1,91 @@
+<!-- 
+******************************
+Application: Turo Car Rental
+Created By: Priya Mishra
+File: details.html
+Last Updated: 12/09/2015
+******************************
+--> 
+
+<!-- This is a Partial Page 2: Details.html - that displays the details of the listed car user selects -->
+
+<div class="contain" ng-model="cars">
+    <div class="detail-contain">
+        <div class="detail">
+            <div class="fron">
+
+                <div class="cover">
+                    <img ng-src="images/{{rz.CarTypeCode}}_289x137.png" alt="Photo of {{crs.CarTypeName}}" />
+                    <div><span class="postype"> {{crs.PossibleModels}}</span></div>
+                    <div><span class="postype"> {{crs.PossibleFeatures}}</span></div>
+                </div>
+
+                <div class="content">
+                    <div class="main">
+                        <h3 class="name">{{crs.CarTypeName}}</h3>
+                        <div class="first float_left">
+                            <span class="icon_mileage"></span>{{rz.MileageDescription}} Miles
+                        </div>
+                        <div class="first">
+                            <span class="icon_power">{{rz.RentalDays}} Days
+                        </div>
+                        <div class="second float_left">
+                            <span class="icon_fuel">{{crs.TypicalSeating}}
+                        </div>
+                        <div class="second">
+                            <span class="icon_gearbox"></span>{{rz.LocationDescription}}
+                        </div>
+                    </div> <!-- End of Main Class -->
+                </div> <!-- End of Content Class -->
+
+
+                <table align="center">
+                    <tr>
+                        <td> <label class="title">Car Type Name</label></td>
+                        <td> <span class="value">{{rz.CarTypeCode}}</span></td>
+                        <td> <label class="title">Pick Up Location</td>
+                        <td> <span class="value">{{rz.PickupAirport}}</td>
+                    </tr>
+
+                    <tr>
+                        <td> <label class="title">Rental Days</td>
+                        <td> <span class="value">{{rz.RentalDays}}</td>
+                        <td> <label class="title">Pick Up Day</td>
+                        <td> <span class="value">{{rz.PickupDay}}</td>
+                    </tr>
+
+                    <tr>
+                        <td> <label class="title">Daily Rate</td>
+                        <td> <span class="value">{{rz.DailyRate}}</td>
+                        <td> <label class="title">Pick Up Time</td>
+                        <td> <span class="value">{{rz.PickupTime}}</td>
+                    </tr>
+
+                    <tr>
+                        <td> <label class="title">Sub Total</td>
+                        <td> <span class="value">{{rz.SubTotal}}</td>
+                        <td> <label class="title">Drop Off Day</label></td>
+                        <td> <span class="value">{{rz.DropoffDay}}</td>
+                    </tr>
+
+                    <tr>
+                       <td> <label class="title">Taxes And Fees</td>
+                       <td> <span class="value">{{rz.TaxesAndFees}}</td>
+                       <td> <label class="title">Drop Off Time</td>
+                       <td> <span class="value">{{rz.DropoffTime}}</td>
+                   </tr>
+                </table>
+
+                <div class="price">Total Price: &dollar;{{rz.TotalPrice}}
+                    <p class="submit"><input type="submit" name="commit" value="Checkout"></p>
+                </div> <!-- End of Price class -->
+
+            </div> <!-- End fron panel -->
+        </div> <!-- End detail -->
+    </div> <!-- End detail-contain -->
+</div> <!-- End of Contain -->
+
+
+
+
+

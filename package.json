@@ -1,13 +1,3 @@
-/*
-******************************
-Application: Turo Car Rental
-Created By: Priya Mishra
-File: package.json
-Last Updated: 12/09/2015
-******************************
-*/
-
-/* Specifics of npm's package.json handling */
 
 {
   "name": "PriyaTuro",
@@ -24,6 +14,6 @@ Last Updated: 12/09/2015
   },
   "engines": 
   {
-  "node": "0.10.x"
+  "node": "5.1.0"
   }
 }

@@ -8,7 +8,8 @@ Last Updated: 12/09/2015
 --> 
 
 <!DOCTYPE html>
-<html lang="en"> 
+<!-- Html with ng-app directive indicates that the page reflects the Angular Application "carApp" -->
+<html ng-app="carApp"> 
 
 <head>
     <meta charset="utf-8">
@@ -26,8 +27,8 @@ Last Updated: 12/09/2015
     <link rel="stylesheet" href="https://code.angularjs.org/snapshot/angular-csp.css">
 </head>
 
-<!-- Apply the module and controller to body (Angular applies here) -->
-<body ng-app="carApp" ng-controllers="carControllers">
+<!-- Body with ng-controller directive tells Angular that the controllers scope should reside within it -->
+<body ng-controllers="carControllers">
 
     <!-- Header Start -->
     <div>

@@ -8,7 +8,7 @@ Last Updated: 12/09/2015
 ******************************
 */
 
-// define Angular Module/App
+// define Angular Module/App and second arguement list of dependencies our module relies on
 var carApp = angular.module('carApp', [
 	'ngRoute',
 	'carControllers'
